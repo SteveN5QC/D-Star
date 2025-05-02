@@ -18,7 +18,7 @@ https://github.com/SteveN5QC/D-Star.git
 Set Up Repository Structure
 
 
-
+5/02/25:  Moved Frequency Survey to SDR
 
 
 
