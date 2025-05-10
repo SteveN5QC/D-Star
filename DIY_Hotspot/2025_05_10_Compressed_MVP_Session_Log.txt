@@ -1,0 +1,447 @@
+steve@steve-Lenovo-Flex-2-15:~$ sudo apt update
+[sudo] password for steve: 
+Get:1 file:/usr/lib/expressvpn/repo_mirror.list Mirrorlist [117 B]
+Hit:3 http://archive.linux.duke.edu/ubuntu jammy InRelease
+Get:4 http://archive.linux.duke.edu/ubuntu jammy-updates InRelease [128 kB]
+Get:2 https://repo.expressvpn.com/public/deb/debian any-version InRelease [4,580 B]
+Get:5 http://archive.linux.duke.edu/ubuntu jammy-backports InRelease [127 kB]
+Get:6 http://archive.linux.duke.edu/ubuntu jammy-security InRelease [129 kB]
+Get:7 http://archive.linux.duke.edu/ubuntu jammy-updates/main amd64 Packages [2,555 kB]
+Get:8 http://archive.linux.duke.edu/ubuntu jammy-updates/main i386 Packages [804 kB]
+Get:9 http://archive.linux.duke.edu/ubuntu jammy-updates/main amd64 DEP-11 Metadata [114 kB]
+Get:10 http://archive.linux.duke.edu/ubuntu jammy-updates/restricted amd64 DEP-11 Metadata [212 B]
+Get:11 http://archive.linux.duke.edu/ubuntu jammy-updates/universe amd64 Packages [1,203 kB]
+Get:12 http://archive.linux.duke.edu/ubuntu jammy-updates/universe i386 Packages [766 kB]
+Get:13 http://archive.linux.duke.edu/ubuntu jammy-updates/universe amd64 DEP-11 Metadata [359 kB]
+Get:14 http://archive.linux.duke.edu/ubuntu jammy-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Get:15 http://archive.linux.duke.edu/ubuntu jammy-backports/main amd64 DEP-11 Metadata [7,076 B]
+Get:16 http://archive.linux.duke.edu/ubuntu jammy-backports/restricted amd64 DEP-11 Metadata [212 B]
+Get:17 http://archive.linux.duke.edu/ubuntu jammy-backports/universe amd64 DEP-11 Metadata [24.3 kB]
+Get:18 http://archive.linux.duke.edu/ubuntu jammy-backports/multiverse amd64 DEP-11 Metadata [212 B]
+Get:19 http://archive.linux.duke.edu/ubuntu jammy-security/main amd64 DEP-11 Metadata [54.6 kB]
+Get:20 http://archive.linux.duke.edu/ubuntu jammy-security/restricted amd64 DEP-11 Metadata [208 B]
+Get:21 http://archive.linux.duke.edu/ubuntu jammy-security/universe amd64 DEP-11 Metadata [125 kB]
+Get:22 http://archive.linux.duke.edu/ubuntu jammy-security/multiverse amd64 DEP-11 Metadata [208 B]
+Fetched 6,404 kB in 3s (2,261 kB/s)                              
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+2 packages can be upgraded. Run 'apt list --upgradable' to see them.
+steve@steve-Lenovo-Flex-2-15:~$ sudo apt upgrade
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Calculating upgrade... Done
+Get more security updates through Ubuntu Pro with 'esm-apps' enabled:
+  libzvbi-common libheif1 imagemagick libjs-jquery-ui libpathplan4 liblua5.4-0
+  graphviz libgvpr2 libgvc6 libopenexr25 python3-scipy libpostproc55
+  libcgraph6 libmagickcore-6.q16-6-extra libcdt5 libavcodec58
+  libmagickwand-6.q16-6 libpython2.7 libavutil56 imagemagick-6.q16 libswscale5
+  libmagickcore-6.q16-6 liblab-gamut1 libgraphicsmagick-q16-3 libswresample3
+  imagemagick-6-common libavformat58 libzvbi0 libde265-0 libpython2.7-minimal
+  libpmix2 libpython2.7-stdlib libavfilter7
+Learn more about Ubuntu Pro at https://ubuntu.com/pro
+The following packages have been kept back:
+  grub-efi-amd64-bin grub-efi-amd64-signed
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+steve@steve-Lenovo-Flex-2-15:~$ sudo apt install gparted
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  gparted-common
+Suggested packages:
+  dmraid gpart jfsutils kpartx reiser4progs reiserfsprogs udftools xfsprogs
+  exfatprogs
+The following NEW packages will be installed:
+  gparted gparted-common
+0 upgraded, 2 newly installed, 0 to remove and 2 not upgraded.
+Need to get 490 kB of archives.
+After this operation, 2,128 kB of additional disk space will be used.
+Do you want to continue? [Y/n] 
+Get:1 http://archive.linux.duke.edu/ubuntu jammy/main amd64 gparted-common all 1.3.1-1ubuntu1 [71.9 kB]
+Get:2 http://archive.linux.duke.edu/ubuntu jammy/main amd64 gparted amd64 1.3.1-1ubuntu1 [418 kB]
+Fetched 490 kB in 0s (1,220 kB/s)
+Selecting previously unselected package gparted-common.
+(Reading database ... 271689 files and directories currently installed.)
+Preparing to unpack .../gparted-common_1.3.1-1ubuntu1_all.deb ...
+Unpacking gparted-common (1.3.1-1ubuntu1) ...
+Selecting previously unselected package gparted.
+Preparing to unpack .../gparted_1.3.1-1ubuntu1_amd64.deb ...
+Unpacking gparted (1.3.1-1ubuntu1) ...
+Setting up gparted-common (1.3.1-1ubuntu1) ...
+Setting up gparted (1.3.1-1ubuntu1) ...
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for bamfdaemon (0.5.6+22.04.20220217-0ubuntu1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+Processing triggers for man-db (2.10.2-1) ...
+steve@steve-Lenovo-Flex-2-15:~$ df -Th | grep media
+/dev/sdb2                   ext4    59G  1.8G   55G   4% /media/steve/root
+/dev/sdb1                   vfat   256M   49M  207M  20% /media/steve/boot
+steve@steve-Lenovo-Flex-2-15:~$ lsblk
+NAME                    MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
+loop1                     7:1    0     4K  1 loop  /snap/bare/5
+loop2                     7:2    0  55.4M  1 loop  /snap/core18/2855
+loop3                     7:3    0  55.4M  1 loop  /snap/core18/2846
+loop4                     7:4    0 104.2M  1 loop  /snap/core/17200
+loop5                     7:5    0 104.5M  1 loop  /snap/core/17210
+loop6                     7:6    0  63.8M  1 loop  /snap/core20/2501
+loop7                     7:7    0  63.8M  1 loop  /snap/core20/2571
+loop8                     7:8    0  73.9M  1 loop  /snap/core22/1908
+loop9                     7:9    0  66.8M  1 loop  /snap/core24/888
+loop10                    7:10   0 242.4M  1 loop  /snap/firefox/5987
+loop11                    7:11   0   242M  1 loop  /snap/firefox/6073
+loop12                    7:12   0 140.7M  1 loop  /snap/gnome-3-26-1604/104
+loop13                    7:13   0 140.7M  1 loop  /snap/gnome-3-26-1604/111
+loop14                    7:14   0 164.8M  1 loop  /snap/gnome-3-28-1804/194
+loop15                    7:15   0 164.8M  1 loop  /snap/gnome-3-28-1804/198
+loop16                    7:16   0 218.4M  1 loop  /snap/gnome-3-34-1804/90
+loop17                    7:17   0 218.4M  1 loop  /snap/gnome-3-34-1804/93
+loop18                    7:18   0 349.7M  1 loop  /snap/gnome-3-38-2004/140
+loop19                    7:19   0 349.7M  1 loop  /snap/gnome-3-38-2004/143
+loop20                    7:20   0 505.1M  1 loop  /snap/gnome-42-2204/176
+loop21                    7:21   0   516M  1 loop  /snap/gnome-42-2204/202
+loop22                    7:22   0 404.4M  1 loop  /snap/gnome-46-2404/90
+loop23                    7:23   0   1.5M  1 loop  /snap/gnome-system-monitor/186
+loop24                    7:24   0   1.7M  1 loop  /snap/gnome-system-monitor/193
+loop25                    7:25   0  81.3M  1 loop  /snap/gtk-common-themes/1534
+loop26                    7:26   0  91.7M  1 loop  /snap/gtk-common-themes/1535
+loop27                    7:27   0 207.4M  1 loop  /snap/mesa-2404/495
+loop28                    7:28   0  12.9M  1 loop  /snap/snap-store/1113
+loop29                    7:29   0  12.2M  1 loop  /snap/snap-store/1216
+loop30                    7:30   0  44.4M  1 loop  /snap/snapd/23771
+loop31                    7:31   0  50.9M  1 loop  /snap/snapd/24505
+loop32                    7:32   0   500K  1 loop  /snap/snapd-desktop-integration/178
+loop33                    7:33   0   568K  1 loop  /snap/snapd-desktop-integration/253
+loop34                    7:34   0  73.9M  1 loop  /snap/core22/1963
+sda                       8:0    0 931.5G  0 disk  
+├─sda1                    8:1    0   512M  0 part  /boot/efi
+├─sda2                    8:2    0   732M  0 part  /boot
+└─sda3                    8:3    0 930.3G  0 part  
+  └─sda3_crypt          253:0    0 930.3G  0 crypt 
+    ├─ubuntu--vg-root   253:1    0 929.3G  0 lvm   /var/snap/firefox/common/host-hunspell
+    │                                              /
+    └─ubuntu--vg-swap_1 253:2    0   976M  0 lvm   [SWAP]
+sdb                       8:16   1  59.5G  0 disk  
+├─sdb1                    8:17   1   256M  0 part  /media/steve/boot
+└─sdb2                    8:18   1  59.2G  0 part  /media/steve/root
+steve@steve-Lenovo-Flex-2-15:~$ sudo gparted
+[sudo] password for steve: 
+GParted 1.3.1
+configuration --enable-libparted-dmraid --enable-online-resize
+libparted 3.4
+/dev/mapper/sda3_crypt: unrecognised disk label
+steve@steve-Lenovo-Flex-2-15:~$ sudo unmount /dev/sdb1
+sudo: unmount: command not found
+steve@steve-Lenovo-Flex-2-15:~$ sudo umount /dev/sdb1
+steve@steve-Lenovo-Flex-2-15:~$ sudo umount /dev/sdb2
+steve@steve-Lenovo-Flex-2-15:~$ sudo gparted
+GParted 1.3.1
+configuration --enable-libparted-dmraid --enable-online-resize
+libparted 3.4
+/dev/mapper/sda3_crypt: unrecognised disk label
+/dev/mapper/sda3_crypt: unrecognised disk label
+steve@steve-Lenovo-Flex-2-15:~$ lsblk
+NAME                    MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
+loop1                     7:1    0     4K  1 loop  /snap/bare/5
+loop2                     7:2    0  55.4M  1 loop  /snap/core18/2855
+loop3                     7:3    0  55.4M  1 loop  /snap/core18/2846
+loop4                     7:4    0 104.2M  1 loop  /snap/core/17200
+loop5                     7:5    0 104.5M  1 loop  /snap/core/17210
+loop6                     7:6    0  63.8M  1 loop  /snap/core20/2501
+loop7                     7:7    0  63.8M  1 loop  /snap/core20/2571
+loop8                     7:8    0  73.9M  1 loop  /snap/core22/1908
+loop9                     7:9    0  66.8M  1 loop  /snap/core24/888
+loop10                    7:10   0 242.4M  1 loop  /snap/firefox/5987
+loop11                    7:11   0   242M  1 loop  /snap/firefox/6073
+loop12                    7:12   0 140.7M  1 loop  /snap/gnome-3-26-1604/104
+loop13                    7:13   0 140.7M  1 loop  /snap/gnome-3-26-1604/111
+loop14                    7:14   0 164.8M  1 loop  /snap/gnome-3-28-1804/194
+loop15                    7:15   0 164.8M  1 loop  /snap/gnome-3-28-1804/198
+loop16                    7:16   0 218.4M  1 loop  /snap/gnome-3-34-1804/90
+loop17                    7:17   0 218.4M  1 loop  /snap/gnome-3-34-1804/93
+loop18                    7:18   0 349.7M  1 loop  /snap/gnome-3-38-2004/140
+loop19                    7:19   0 349.7M  1 loop  /snap/gnome-3-38-2004/143
+loop20                    7:20   0 505.1M  1 loop  /snap/gnome-42-2204/176
+loop21                    7:21   0   516M  1 loop  /snap/gnome-42-2204/202
+loop22                    7:22   0 404.4M  1 loop  /snap/gnome-46-2404/90
+loop23                    7:23   0   1.5M  1 loop  /snap/gnome-system-monitor/186
+loop24                    7:24   0   1.7M  1 loop  /snap/gnome-system-monitor/193
+loop25                    7:25   0  81.3M  1 loop  /snap/gtk-common-themes/1534
+loop26                    7:26   0  91.7M  1 loop  /snap/gtk-common-themes/1535
+loop27                    7:27   0 207.4M  1 loop  /snap/mesa-2404/495
+loop28                    7:28   0  12.9M  1 loop  /snap/snap-store/1113
+loop29                    7:29   0  12.2M  1 loop  /snap/snap-store/1216
+loop30                    7:30   0  44.4M  1 loop  /snap/snapd/23771
+loop31                    7:31   0  50.9M  1 loop  /snap/snapd/24505
+loop32                    7:32   0   500K  1 loop  /snap/snapd-desktop-integration/178
+loop33                    7:33   0   568K  1 loop  /snap/snapd-desktop-integration/253
+loop34                    7:34   0  73.9M  1 loop  /snap/core22/1963
+sda                       8:0    0 931.5G  0 disk  
+├─sda1                    8:1    0   512M  0 part  /boot/efi
+├─sda2                    8:2    0   732M  0 part  /boot
+└─sda3                    8:3    0 930.3G  0 part  
+  └─sda3_crypt          253:0    0 930.3G  0 crypt 
+    ├─ubuntu--vg-root   253:1    0 929.3G  0 lvm   /var/snap/firefox/common/host-hunspell
+    │                                              /
+    └─ubuntu--vg-swap_1 253:2    0   976M  0 lvm   [SWAP]
+sdb                       8:16   1  59.5G  0 disk  
+├─sdb1                    8:17   1   256M  0 part  
+└─sdb2                    8:18   1   4.3G  0 part  
+steve@steve-Lenovo-Flex-2-15:~$ sudo mkdir -p /mnt/sdcard
+[sudo] password for steve: 
+steve@steve-Lenovo-Flex-2-15:~$ sudo mount /dev/sdb2 /mnt/sdcard
+steve@steve-Lenovo-Flex-2-15:~$ sudo mount /dev/sdb1 /mnt/sdcard
+steve@steve-Lenovo-Flex-2-15:~$ lsblk
+NAME                    MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
+loop1                     7:1    0     4K  1 loop  /snap/bare/5
+loop2                     7:2    0  55.4M  1 loop  /snap/core18/2855
+loop3                     7:3    0  55.4M  1 loop  /snap/core18/2846
+loop4                     7:4    0 104.2M  1 loop  /snap/core/17200
+loop5                     7:5    0 104.5M  1 loop  /snap/core/17210
+loop6                     7:6    0  63.8M  1 loop  /snap/core20/2501
+loop7                     7:7    0  63.8M  1 loop  /snap/core20/2571
+loop8                     7:8    0  73.9M  1 loop  /snap/core22/1908
+loop9                     7:9    0  66.8M  1 loop  /snap/core24/888
+loop10                    7:10   0 242.4M  1 loop  /snap/firefox/5987
+loop11                    7:11   0   242M  1 loop  /snap/firefox/6073
+loop12                    7:12   0 140.7M  1 loop  /snap/gnome-3-26-1604/104
+loop13                    7:13   0 140.7M  1 loop  /snap/gnome-3-26-1604/111
+loop14                    7:14   0 164.8M  1 loop  /snap/gnome-3-28-1804/194
+loop15                    7:15   0 164.8M  1 loop  /snap/gnome-3-28-1804/198
+loop16                    7:16   0 218.4M  1 loop  /snap/gnome-3-34-1804/90
+loop17                    7:17   0 218.4M  1 loop  /snap/gnome-3-34-1804/93
+loop18                    7:18   0 349.7M  1 loop  /snap/gnome-3-38-2004/140
+loop19                    7:19   0 349.7M  1 loop  /snap/gnome-3-38-2004/143
+loop20                    7:20   0 505.1M  1 loop  /snap/gnome-42-2204/176
+loop21                    7:21   0   516M  1 loop  /snap/gnome-42-2204/202
+loop22                    7:22   0 404.4M  1 loop  /snap/gnome-46-2404/90
+loop23                    7:23   0   1.5M  1 loop  /snap/gnome-system-monitor/186
+loop24                    7:24   0   1.7M  1 loop  /snap/gnome-system-monitor/193
+loop25                    7:25   0  81.3M  1 loop  /snap/gtk-common-themes/1534
+loop26                    7:26   0  91.7M  1 loop  /snap/gtk-common-themes/1535
+loop27                    7:27   0 207.4M  1 loop  /snap/mesa-2404/495
+loop28                    7:28   0  12.9M  1 loop  /snap/snap-store/1113
+loop29                    7:29   0  12.2M  1 loop  /snap/snap-store/1216
+loop30                    7:30   0  44.4M  1 loop  /snap/snapd/23771
+loop31                    7:31   0  50.9M  1 loop  /snap/snapd/24505
+loop32                    7:32   0   500K  1 loop  /snap/snapd-desktop-integration/178
+loop33                    7:33   0   568K  1 loop  /snap/snapd-desktop-integration/253
+loop34                    7:34   0  73.9M  1 loop  /snap/core22/1963
+sda                       8:0    0 931.5G  0 disk  
+├─sda1                    8:1    0   512M  0 part  /boot/efi
+├─sda2                    8:2    0   732M  0 part  /boot
+└─sda3                    8:3    0 930.3G  0 part  
+  └─sda3_crypt          253:0    0 930.3G  0 crypt 
+    ├─ubuntu--vg-root   253:1    0 929.3G  0 lvm   /var/snap/firefox/common/host-hunspell
+    │                                              /
+    └─ubuntu--vg-swap_1 253:2    0   976M  0 lvm   [SWAP]
+sdb                       8:16   1  59.5G  0 disk  
+├─sdb1                    8:17   1   256M  0 part  /mnt/sdcard
+└─sdb2                    8:18   1   4.3G  0 part  /mnt/sdcard
+steve@steve-Lenovo-Flex-2-15:~$ sudo dd if=/dev/zero of=/mnt/sdcard/zero.fill bs=1M
+dd: error writing '/mnt/sdcard/zero.fill': No space left on device
+207+0 records in
+206+0 records out
+216907776 bytes (217 MB, 207 MiB) copied, 0.348418 s, 623 MB/s
+steve@steve-Lenovo-Flex-2-15:~$ sudo rm /mnt/sdcard/zero.fill
+steve@steve-Lenovo-Flex-2-15:~$ sudo umount /mnt/sdcard/boot
+umount: /mnt/sdcard/boot: no mount point specified.
+steve@steve-Lenovo-Flex-2-15:~$ sedo umount /mnt/sdcard
+Command 'sedo' not found, did you mean:
+  command 'sudo' from deb sudo (1.9.9-1ubuntu2.4)
+  command 'sudo' from deb sudo-ldap (1.9.9-1ubuntu2.4)
+  command 'vedo' from deb python3-vedo (2021.0.7-1)
+  command 'sed' from deb sed (4.8-1ubuntu2)
+Try: sudo apt install <deb name>
+steve@steve-Lenovo-Flex-2-15:~$ sudo umount /mnt/sdcard
+steve@steve-Lenovo-Flex-2-15:~$ lsblk
+NAME                    MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
+loop1                     7:1    0     4K  1 loop  /snap/bare/5
+loop2                     7:2    0  55.4M  1 loop  /snap/core18/2855
+loop3                     7:3    0  55.4M  1 loop  /snap/core18/2846
+loop4                     7:4    0 104.2M  1 loop  /snap/core/17200
+loop5                     7:5    0 104.5M  1 loop  /snap/core/17210
+loop6                     7:6    0  63.8M  1 loop  /snap/core20/2501
+loop7                     7:7    0  63.8M  1 loop  /snap/core20/2571
+loop8                     7:8    0  73.9M  1 loop  /snap/core22/1908
+loop9                     7:9    0  66.8M  1 loop  /snap/core24/888
+loop10                    7:10   0 242.4M  1 loop  /snap/firefox/5987
+loop11                    7:11   0   242M  1 loop  /snap/firefox/6073
+loop12                    7:12   0 140.7M  1 loop  /snap/gnome-3-26-1604/104
+loop13                    7:13   0 140.7M  1 loop  /snap/gnome-3-26-1604/111
+loop14                    7:14   0 164.8M  1 loop  /snap/gnome-3-28-1804/194
+loop15                    7:15   0 164.8M  1 loop  /snap/gnome-3-28-1804/198
+loop16                    7:16   0 218.4M  1 loop  /snap/gnome-3-34-1804/90
+loop17                    7:17   0 218.4M  1 loop  /snap/gnome-3-34-1804/93
+loop18                    7:18   0 349.7M  1 loop  /snap/gnome-3-38-2004/140
+loop19                    7:19   0 349.7M  1 loop  /snap/gnome-3-38-2004/143
+loop20                    7:20   0 505.1M  1 loop  /snap/gnome-42-2204/176
+loop21                    7:21   0   516M  1 loop  /snap/gnome-42-2204/202
+loop22                    7:22   0 404.4M  1 loop  /snap/gnome-46-2404/90
+loop23                    7:23   0   1.5M  1 loop  /snap/gnome-system-monitor/186
+loop24                    7:24   0   1.7M  1 loop  /snap/gnome-system-monitor/193
+loop25                    7:25   0  81.3M  1 loop  /snap/gtk-common-themes/1534
+loop26                    7:26   0  91.7M  1 loop  /snap/gtk-common-themes/1535
+loop27                    7:27   0 207.4M  1 loop  /snap/mesa-2404/495
+loop28                    7:28   0  12.9M  1 loop  /snap/snap-store/1113
+loop29                    7:29   0  12.2M  1 loop  /snap/snap-store/1216
+loop30                    7:30   0  44.4M  1 loop  /snap/snapd/23771
+loop31                    7:31   0  50.9M  1 loop  /snap/snapd/24505
+loop32                    7:32   0   500K  1 loop  /snap/snapd-desktop-integration/178
+loop33                    7:33   0   568K  1 loop  /snap/snapd-desktop-integration/253
+loop34                    7:34   0  73.9M  1 loop  /snap/core22/1963
+sda                       8:0    0 931.5G  0 disk  
+├─sda1                    8:1    0   512M  0 part  /boot/efi
+├─sda2                    8:2    0   732M  0 part  /boot
+└─sda3                    8:3    0 930.3G  0 part  
+  └─sda3_crypt          253:0    0 930.3G  0 crypt 
+    ├─ubuntu--vg-root   253:1    0 929.3G  0 lvm   /var/snap/firefox/common/host-hunspell
+    │                                              /
+    └─ubuntu--vg-swap_1 253:2    0   976M  0 lvm   [SWAP]
+sdb                       8:16   1  59.5G  0 disk  
+├─sdb1                    8:17   1   256M  0 part  
+└─sdb2                    8:18   1   4.3G  0 part  /mnt/sdcard
+steve@steve-Lenovo-Flex-2-15:~$ sudo umount /mnt/sdcard
+steve@steve-Lenovo-Flex-2-15:~$ lsblk
+NAME                    MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
+loop1                     7:1    0     4K  1 loop  /snap/bare/5
+loop2                     7:2    0  55.4M  1 loop  /snap/core18/2855
+loop3                     7:3    0  55.4M  1 loop  /snap/core18/2846
+loop4                     7:4    0 104.2M  1 loop  /snap/core/17200
+loop5                     7:5    0 104.5M  1 loop  /snap/core/17210
+loop6                     7:6    0  63.8M  1 loop  /snap/core20/2501
+loop7                     7:7    0  63.8M  1 loop  /snap/core20/2571
+loop8                     7:8    0  73.9M  1 loop  /snap/core22/1908
+loop9                     7:9    0  66.8M  1 loop  /snap/core24/888
+loop10                    7:10   0 242.4M  1 loop  /snap/firefox/5987
+loop11                    7:11   0   242M  1 loop  /snap/firefox/6073
+loop12                    7:12   0 140.7M  1 loop  /snap/gnome-3-26-1604/104
+loop13                    7:13   0 140.7M  1 loop  /snap/gnome-3-26-1604/111
+loop14                    7:14   0 164.8M  1 loop  /snap/gnome-3-28-1804/194
+loop15                    7:15   0 164.8M  1 loop  /snap/gnome-3-28-1804/198
+loop16                    7:16   0 218.4M  1 loop  /snap/gnome-3-34-1804/90
+loop17                    7:17   0 218.4M  1 loop  /snap/gnome-3-34-1804/93
+loop18                    7:18   0 349.7M  1 loop  /snap/gnome-3-38-2004/140
+loop19                    7:19   0 349.7M  1 loop  /snap/gnome-3-38-2004/143
+loop20                    7:20   0 505.1M  1 loop  /snap/gnome-42-2204/176
+loop21                    7:21   0   516M  1 loop  /snap/gnome-42-2204/202
+loop22                    7:22   0 404.4M  1 loop  /snap/gnome-46-2404/90
+loop23                    7:23   0   1.5M  1 loop  /snap/gnome-system-monitor/186
+loop24                    7:24   0   1.7M  1 loop  /snap/gnome-system-monitor/193
+loop25                    7:25   0  81.3M  1 loop  /snap/gtk-common-themes/1534
+loop26                    7:26   0  91.7M  1 loop  /snap/gtk-common-themes/1535
+loop27                    7:27   0 207.4M  1 loop  /snap/mesa-2404/495
+loop28                    7:28   0  12.9M  1 loop  /snap/snap-store/1113
+loop29                    7:29   0  12.2M  1 loop  /snap/snap-store/1216
+loop30                    7:30   0  44.4M  1 loop  /snap/snapd/23771
+loop31                    7:31   0  50.9M  1 loop  /snap/snapd/24505
+loop32                    7:32   0   500K  1 loop  /snap/snapd-desktop-integration/178
+loop33                    7:33   0   568K  1 loop  /snap/snapd-desktop-integration/253
+loop34                    7:34   0  73.9M  1 loop  /snap/core22/1963
+sda                       8:0    0 931.5G  0 disk  
+├─sda1                    8:1    0   512M  0 part  /boot/efi
+├─sda2                    8:2    0   732M  0 part  /boot
+└─sda3                    8:3    0 930.3G  0 part  
+  └─sda3_crypt          253:0    0 930.3G  0 crypt 
+    ├─ubuntu--vg-root   253:1    0 929.3G  0 lvm   /var/snap/firefox/common/host-hunspell
+    │                                              /
+    └─ubuntu--vg-swap_1 253:2    0   976M  0 lvm   [SWAP]
+sdb                       8:16   1  59.5G  0 disk  
+├─sdb1                    8:17   1   256M  0 part  
+└─sdb2                    8:18   1   4.3G  0 part  
+steve@steve-Lenovo-Flex-2-15:~$ ls
+'2021_02_17_Nielson Family Tree_ancestor_chart.odt'
+'2021_02_17_Nielson Family Tree_fan_chart.odt'
+ Arduino
+ Desktop
+ Documents
+ Downloads
+'Draw  Do It Anyway—and Reap the Rewards.pdf'
+ examples.desktop
+ Pictures
+ Public
+ putty.log
+ snap
+ Templates
+ Videos
+'Working Tree_2018-07-28.gpkg.media'
+steve@steve-Lenovo-Flex-2-15:~$ sudo dd if=/dev/sdb of=pistar_MVP_2.img bs=4M status=progress 
+sync
+[sudo] password for steve: 
+Sorry, try again.
+[sudo] password for steve: 
+dd: invalid status level: ‘progress ’
+Try 'dd --help' for more information.
+steve@steve-Lenovo-Flex-2-15:~$ sudo dd if=/dev/sdb of=pistar_MVP_2.img bs=4M status=progress
+63864569856 bytes (64 GB, 59 GiB) copied, 3700 s, 17.3 MB/s
+15226+1 records in
+15226+1 records out
+63864569856 bytes (64 GB, 59 GiB) copied, 3700.36 s, 17.3 MB/s
+steve@steve-Lenovo-Flex-2-15:~$ sync
+steve@steve-Lenovo-Flex-2-15:~$ wget https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh 
+chmod +x pishrink.sh
+--2025-05-10 12:18:48--  https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh%C2%A0
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.109.133, 185.199.108.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2025-05-10 12:18:48 ERROR 404: Not Found.
+
+chmod: cannot access 'pishrink.sh': No such file or directory
+steve@steve-Lenovo-Flex-2-15:~$ wget https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh
+--2025-05-10 12:28:18--  https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.111.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12034 (12K) [text/plain]
+Saving to: ‘pishrink.sh’
+
+pishrink.sh                                          100%[=====================================================================================================================>]  11.75K  --.-KB/s    in 0.004s  
+
+2025-05-10 12:28:18 (2.81 MB/s) - ‘pishrink.sh’ saved [12034/12034]
+
+steve@steve-Lenovo-Flex-2-15:~$ chmod +x pishrink.sh
+sudo mv pishrink.sh /usr/local/bin
+[sudo] password for steve: 
+steve@steve-Lenovo-Flex-2-15:~$ sudo pishrink.sh pistar_MVP_2.img
+PiShrink v24.10.23 - https://github.com/Drewsif/PiShrink
+
+pishrink.sh: Gathering data
+Creating new /etc/rc.local
+pishrink.sh: Checking filesystem
+root: 55524/286720 files (0.4% non-contiguous), 497886/1117952 blocks
+resize2fs 1.46.5 (30-Dec-2021)
+pishrink.sh: Shrinking filesystem
+resize2fs 1.46.5 (30-Dec-2021)
+Resizing the filesystem on /dev/loop0 to 727656 (4k) blocks.
+Begin pass 2 (max = 41588)
+Relocating blocks             XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Begin pass 3 (max = 35)
+Scanning inode table          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Begin pass 4 (max = 5462)
+Updating inode references     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+The filesystem on /dev/loop0 is now 727656 (4k) blocks long.
+
+pishrink.sh: Zeroing any free space left
+pishrink.sh: Zeroed 909M
+pishrink.sh: Shrinking partition
+pishrink.sh: Truncating image
+pishrink.sh: Shrunk pistar_MVP_2.img from 60G to 3.1G
+steve@steve-Lenovo-Flex-2-15:~$ ls
+'2021_02_17_Nielson Family Tree_ancestor_chart.odt'   Arduino   Documents  'Draw  Do It Anyway—and Reap the Rewards.pdf'   Pictures           Public      snap        Videos
+'2021_02_17_Nielson Family Tree_fan_chart.odt'        Desktop   Downloads   examples.desktop                               pistar_MVP_2.img   putty.log   Templates  'Working Tree_2018-07-28.gpkg.media'
+steve@steve-Lenovo-Flex-2-15:~$ xz -9 pistar_MVP_2.img
+xz: pistar_MVP_2.img.xz: Cannot set the file group: Operation not permitted
+steve@steve-Lenovo-Flex-2-15:~$ ls
+'2021_02_17_Nielson Family Tree_ancestor_chart.odt'   Arduino   Documents  'Draw  Do It Anyway—and Reap the Rewards.pdf'   Pictures              Public      snap        Videos
+'2021_02_17_Nielson Family Tree_fan_chart.odt'        Desktop   Downloads   examples.desktop                               pistar_MVP_2.img.xz   putty.log   Templates  'Working Tree_2018-07-28.gpkg.media'
+steve@steve-Lenovo-Flex-2-15:~$ xz -l pistar_MVP_2.img.xz
+Strms  Blocks   Compressed Uncompressed  Ratio  Check   Filename
+    1       1    509.3 MiB  3,102.4 MiB  0.164  CRC64   pistar_MVP_2.img.xz
+steve@steve-Lenovo-Flex-2-15:~$ md5sum pistar_MVP_2.img.xz
+b6086e94fa3419ea192bd7a9cebbd1c5  pistar_MVP_2.img.xz
+steve@steve-Lenovo-Flex-2-15:~$ 
+
